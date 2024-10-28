@@ -58,6 +58,7 @@ footer p{
     margin: 0,6rem;
     border-radius: 0,6rem;
     font-size: 1vw;
+    backface-visibility: var(--card-front-color);
 }
 
 .cartao__conteudo__pergumta p {
@@ -65,11 +66,19 @@ footer p{
 font-weight: 500;
 }
 
-.cartao__conteudo__resposta p [
+.cartao__conteudo__resposta p {
     color: var(--card-back-color);
     font-weight: 700;
-]
+}
 
-.cartao:hover  .cartao__conteudo[
+.cartao:hover  .cartao__conteudo{
     trasform; rotateY("180deg"):
-]
+}
+.cartao__conteudo__resposta
+.cartao__conteudo__resposta{
+    backface-visibility: hidden;
+}
+
+.cartao__conteudo__resposta{
+    transform: rotateY(180deg);
+}
