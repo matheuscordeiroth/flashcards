@@ -12,4 +12,6 @@ function criaCartao(categoria, pergunta, resposta) {
                         <p>javaScript é uma linguagem de programação.</p>
                     </div>
                 </div>`
+                container.appendChild(cartao)
+                
 }
